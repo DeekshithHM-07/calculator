@@ -1,0 +1,175 @@
+/* defult style */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+
+  /* style for body  */
+body{
+    background-image:url(calculator.jpg);
+    background-size:cover;
+    height: fit-content;
+    min-height: 100vh;
+    max-width: 100%;
+    background-blend-mode: overlay;
+    background-color: rgba(81, 18, 190, 0.25);
+    position: relative;
+    text-align: center;
+}
+
+/* style for heading  */
+h1{
+    color:rgb(4, 4, 71);
+    position: absolute;
+    top:15%;
+    left:29%;
+    transform: translate(-50%,-50%);     
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+/* style for calculator box */
+.calculator-container{
+    position: absolute;
+    top:60%;
+    left:48%;
+    transform: translate(-50%,-50%);   
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    box-shadow: 0 0 1rem blue;
+    border-radius: 0.3rem;
+    opacity: 0.6;
+    background: transparent;
+}
+
+/* style for input box */
+.display input{
+    border: 1rem;
+    outline: 2rem;
+    width: 20rem;
+    background: transparent;
+    font-size: 2.8rem;
+    text-align: right;
+    color:rgb(4, 4, 71);
+    cursor: pointer;
+}
+
+/* style for button */
+button{
+    width: 4.5rem;
+    height: 3rem;
+    margin: 0.3rem 0.1rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    box-shadow: -0.3rem -0.2rem 1rem blue;
+    color: rgb(4, 4, 71);
+    border: 0;
+    outline: 0.1rem solid rgb(173, 168, 199);
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button:active{
+    background: rgb(66, 66, 172);
+    transform: translate(0.1rem,0.1rem);
+    color: white;
+}
+/* style for button named as class name operator */
+.operator{
+    background-color: rgb(117, 117, 209);
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+/* style for screen width from 1700px to 2900px 
+   style for big tv  screen size*/
+@media only screen and (min-width:1700px) and (max-width:2900px){
+    .display input{
+        width:51rem;
+        font-size: 8rem;
+    }
+    h1{
+        font-size: 8rem;
+    }
+    button{
+        width: 11rem;
+        height: 7rem;
+        margin: 1rem 0.5rem;
+        font-size: 5rem;
+    }
+    .calculator-container{
+        top:60%;
+        left:45%;
+        font-weight: bolder;
+    }
+}    
+
+/* style for screen width from 1400px to 1700px 
+   style for large laptop screen size*/
+@media only screen and (min-width:1400px) and (max-width:1700px){
+    .display input{
+        width:30rem;
+        font-size:5rem ;
+    }
+    h1{
+        font-size:2.6rem ;
+    }
+    button{
+        width:7rem;
+        height:5rem;  
+        font-size:3rem; 
+    }
+    .calculator-container{
+        top:60%;
+        left:43%;
+    }
+}
+
+/* style for screen width from 500px to 1000px 
+   style for small-medium screen size*/
+@media only screen and (min-width:500px) and (max-width:1000px){
+    h1{
+        font-size: 2rem;
+        left:34%;
+    }
+    button{
+        width: 4rem;
+        height: 3rem;
+        margin: 0.2rem 0.1rem;
+    }
+    .display input{
+        width:18rem;
+    }
+    .calculator-container{
+        left:35%;
+    }
+    
+
+}    
+
+/* style for screen width from 200px to 500px 
+   style for mobile screen size*/
+@media only screen and (min-width:200px) and (max-width:500px){
+    h1{
+        position: none;
+        top:15%;
+        left:35%;
+        font-size:1.35rem;
+        text-decoration: underline;
+    }
+    button{
+        width: 3rem;
+        height: 3rem;
+        margin: 0.2rem 0.1rem;
+    }
+    .display input{
+        width:14rem;
+
+    }
+    .calculator-container{
+        top:55%;
+    }
+    
+
+}    

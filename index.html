@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <h1>BASIC-CALCULATOR</h1> 
+    <div class="calculator-container"><!--div calculator box-->
+
+        <div class="display"><!--div for input box-->
+            <input type="text" id="inputbox" value="0">
+        </div>
+        
+        <div class="row">
+            <button type="button" class="operator">AC</button>        
+            <button type="button"  class="operator">DL</button>        
+            <button type="button"  class="operator">%</button>        
+            <button type="button"  class="operator">+</button>            
+        </div>
+        <div class="row">
+            <button type="button">7</button>        
+            <button type="button">8</button>        
+            <button type="button">9</button>        
+            <button type="button"  class="operator">-</button>            
+        </div>
+        <div class="row">
+            <button type="button" >4</button>        
+            <button type="button">5</button>        
+            <button type="button">6</button>        
+            <button type="button"  class="operator">*</button>            
+        </div>
+        <div class="row">
+            <button type="button">1</button>        
+            <button type="button">2</button>        
+            <button type="button">3</button>        
+            <button type="button" class="operator">/</button>            
+        </div>    
+        <div class="row">
+            <button type="button" >.</button>        
+            <button type="button">0</button>        
+            <button type="button" class="operator" id="square" >x&#178;</button>        
+            <button type="button" class="operator">=</button>            
+        </div>   
+
+    </div><!--end of the div calculator box-->    
+    <script src="script.js"></script>
+</body>
+</html>
